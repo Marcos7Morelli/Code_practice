@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    border: 1px solid rgb(230, 224, 224);
+    box-shadow: 1.5px 1.5px 10px rgb(66, 66, 66);
+    color: rgb(0, 0, 0);
+    background-color:rgb(227, 199, 163);
+    border-radius:10px;
+}
+button:hover{
+    background-color: rgb(225, 186, 135); 
+    color: white;
+    border: 1px solid white;
+    box-shadow:1.5px 1.5px 10px rgb(164, 162, 162) ;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logo{
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(56, 55, 55);
+}
+header a:hover{
+    color: rgb(225, 186, 135);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.571),
+        rgba(0, 0, 0, 0.484)
+    )
+    ,url("Images/IMG_7987.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    padding-bottom: 300px ;
+}
+
+#quien-soy .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#quien-soy h2{
+    color: rgb(225, 186, 135);
+}
+#quien-soy p{
+    padding: 20px;
+    justify-content: center;
+    text-align: justify;
+}
+
+#mis-viajes{
+    background-color: rgb(225, 197, 161);
+    color: white;
+    text-align: center;
+}
+
+#mis-viajes .container{
+    padding: 120px 10px;
+}
+
+#mis-viajes .h2cont{
+    /* border-radius: 1000px;
+    box-shadow: 10px 1px 80px rgb(0, 0, 0);
+    box-sizing: -10px;
+    background-color:rgba(160, 129, 92, 0.641);
+    */
+
+    
+}
+
+
+#mis-viajes h2{
+    margin-top: 0;
+    font-size: 3.5em;
+    text-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+    filter:drop-shadow(5PX 7PX 13px rgba(52, 51, 51, 0.793));
+    
+}
+
+#mis-viajes h2::before{
+
+
+}
+
+
+
+
+#mis-viajes p{
+    display: none;
+}
+
+#mis-viajes .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 18px;
+    border-radius: 22px;
+    
+}
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ),url("Images/IMG_6163.jpg");
+        
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ),url("Images/IMG_7987.jpg");
+        
+}
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ),url("Images/IMG_8203.jpg");
+}
+
+
+
+#redes-sociales .container{
+    text-align: center;
+    background-color: rgb(22, 23, 23);
+    padding: 35px;
+}
+#redes-sociales li{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    color: rgb(243, 238, 235);
+}
+.redes{
+    padding: 15px 15px;
+}
+.redes h2 {
+    color: rgb(243, 238, 235);
+    font-size: 2.2em;
+    filter:drop-shadow(1PX 7PX 16px white);
+    
+}
+
+
+.aplica-ya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(244, 229, 196);
+    height: 50vh;
+    margin: 25px
+}
+
+.aplica-ya button{
+    font-size: 1em;
+}
+
+footer{
+    background-color: rgb(47, 47, 47);
+    padding: 1px;
+}
+footer p{
+    text-align: center;
+    align-items: center;
+    color: #cdcaca;
+    filter: drop-shadow(1px 1px 10px rgb(255, 255, 255)) ;
+}
+
+footer.container{
+display: flex;
+
+}
+
+@media(min-width:720px){
+
+    header{
+        
+
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    
+}
